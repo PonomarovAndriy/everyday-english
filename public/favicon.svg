@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="sq">
+      <rect width="48" height="48" rx="6"/>
+    </clipPath>
+  </defs>
+
+  <!-- Union Jack background -->
+  <rect width="48" height="48" rx="6" fill="#012169"/>
+  <g clip-path="url(#sq)">
+    <line x1="-5" y1="-5" x2="53" y2="53" stroke="#fff" stroke-width="14"/>
+    <line x1="53" y1="-5" x2="-5" y2="53" stroke="#fff" stroke-width="14"/>
+    <line x1="-5" y1="-5" x2="53" y2="53" stroke="#C8102E" stroke-width="6"/>
+    <line x1="53" y1="-5" x2="-5" y2="53" stroke="#C8102E" stroke-width="6"/>
+    <rect x="-5" y="19.2" width="58" height="9.6" fill="#fff"/>
+    <rect x="19.2" y="-5" width="9.6" height="58" fill="#fff"/>
+    <rect x="-5" y="21.6" width="58" height="4.8" fill="#C8102E"/>
+    <rect x="21.6" y="-5" width="4.8" height="58" fill="#C8102E"/>
+  </g>
+
+  <!-- First E: top-left -->
+  <text
+    x="15" y="20"
+    font-family="'Arial Black',Impact,sans-serif"
+    font-size="32"
+    font-weight="900"
+    text-anchor="middle"
+    dominant-baseline="central"
+    fill="#3377FF"
+    stroke="#000"
+    stroke-width="1.5"
+    paint-order="stroke">E</text>
+
+  <!-- Second E: bottom-right -->
+  <text
+    x="33" y="30"
+    font-family="'Arial Black',Impact,sans-serif"
+    font-size="32"
+    font-weight="900"
+    text-anchor="middle"
+    dominant-baseline="central"
+    fill="#3377FF"
+    stroke="#000"
+    stroke-width="1.5"
+    paint-order="stroke">E</text>
+</svg>
