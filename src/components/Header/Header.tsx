@@ -1,9 +1,13 @@
 // src/components/Header/Header.tsx
 import { Container, Paper, Stack } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import LogoBlock from "./LogoBlock";
 import Navigation from "./Navigation";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
+  const { i18n } = useTranslation();
+
   return (
     <Container
       maxWidth="lg"
@@ -14,7 +18,7 @@ export default function Header() {
         elevation={3}
         sx={{
           borderRadius: 2,
-          backgroundColor: "rgba(255, 255, 255, 0.9)",
+          backgroundColor: "#000",
           px: { xs: 2, sm: 3 },
           py: { xs: 2, sm: 3 },
         }}
@@ -30,12 +34,12 @@ export default function Header() {
         >
           <LogoBlock />
 
-          {/* <LanguageSwitcher
-            value={i18n.language as "ru" | "bg" | "en"}
+          <LanguageSwitcher
+            value={i18n.language as "de" | "en"}
             onChange={(code) => {
               i18n.changeLanguage(code);
             }}
-          /> */}
+          />
         </Stack>
 
         <Navigation />

@@ -8,7 +8,7 @@ export default function LogoBlock() {
         sx={{
           display: "inline-block",
           cursor: "pointer",
-          bgcolor: "#000",
+          bgcolor: "#000000",
           px: 2,
           py: 1,
           borderRadius: 1,
@@ -21,8 +21,8 @@ export default function LogoBlock() {
             component="span"
             sx={{
               fontFamily: "'Dancing Script', cursive",
-              fontSize: "28px",
-              fontWeight: 700,
+              fontSize: "36px",
+              fontWeight: 800,
               color: "#4d90fe",
               lineHeight: 1.1,
             }}
@@ -33,9 +33,9 @@ export default function LogoBlock() {
             component="span"
             sx={{
               fontFamily: "sans-serif",
-              fontSize: "11px",
+              fontSize: "16px",
               fontWeight: 600,
-              color: "#e0e0e0",
+              color: "#fff",
               letterSpacing: "0.4px",
               mb: "4px",
             }}
@@ -55,7 +55,7 @@ export default function LogoBlock() {
             lineHeight: 1,
             letterSpacing: "2px",
             backgroundImage: "url('/src/assets/background.svg')",
-            backgroundSize: "100% 200%",
+            backgroundSize: "200% 300%",
             backgroundPosition: "center",
             WebkitBackgroundClip: "text",
             backgroundClip: "text",

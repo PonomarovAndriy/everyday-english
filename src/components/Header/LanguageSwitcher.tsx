@@ -1,7 +1,6 @@
 import { IconButton, Stack, Tooltip } from '@mui/material';
-import BG from "../../assets/flags/bg2.png";
-import EN from "../../assets/flags/en2.png";
-import RU from "../../assets/flags/ru2.png";
+import EN from "../../assets/flags/en2.svg";
+import DE from "../../assets/flags/at2.svg";
 import { Lang } from '../../app/utilities/Languages';
 
 export default function LanguageSwitcher({
@@ -11,11 +10,10 @@ export default function LanguageSwitcher({
   value: Lang;
   onChange: (code: Lang) => void;
 }) {
-  const BLUE = "#2970FA";
+  const BLUE = "#f5f7fc";
   const languages: { code: Lang; label: string; flag: string }[] = [
     { code: Lang.EN, label: "English",   flag: EN }, // 🇬🇧
-    { code: Lang.BG, label: "Български", flag: BG }, // 🇧🇬
-    { code: Lang.RU, label: "Русский",   flag: RU }, // 🇷🇺
+    { code: Lang.DE, label: "Deutsch",   flag: DE }, // 🇬🇧
   ];
 
   return (
@@ -35,7 +33,7 @@ export default function LanguageSwitcher({
               "&:hover": {
                 bgcolor: l.code === value ? `${BLUE}2A` : "action.hover",
               },
-              boxShadow: "0 0 3px rgba(0,0,0,0.4)",
+              boxShadow: "0 0 8px rgba(0, 170, 255, 1)",
             }}
           >
             <img
@@ -43,7 +41,7 @@ export default function LanguageSwitcher({
               alt={l.label}
               style={{
                 width: 42,
-                height: 30,
+                height: 26,
                 borderRadius: 2,
                 display: "block",
                 objectFit: "cover",
